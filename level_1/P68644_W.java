@@ -1,6 +1,6 @@
 package Programmers.level_1;
 import java.util.*;
-public class P68644_W {;
+public class P68644_W {
 class Solution {
     public int[] solution(int[] numbers) {
         int cnt=0;
