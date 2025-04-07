@@ -16,6 +16,7 @@ public class P68644_K {
 
             answer = new int [set.size()];
 
+
             Iterator iter = set.iterator();
 
             for (int i = 0; i < set.size(); i++){
