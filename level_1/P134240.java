@@ -5,7 +5,7 @@ public class P134240 {
         public String solution(int[] food) 
         {
             int total=0; // 음식의 개수
-            int cnt=0;
+            int cnt=0; //굳이 필요없음 -> food.length() 사용
             for(int n : food)
             {
                 if(n%2!=0) //홀수 인 경우
@@ -34,6 +34,11 @@ public class P134240 {
             }
             save[fp]=0;
             StringBuilder sb=new StringBuilder();
+            // char c=(char) (num+'0'); -> 문자로 바꿔서
+            // s=문자배열.toString;
+            // or
+            // s=new String(문자배열);
+            // s=String.valueof(문자배열);
             for(int n : save)
             {
                 sb.append(n);
