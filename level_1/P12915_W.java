@@ -6,7 +6,6 @@ public class P12915_W {
         public String[] solution(String[] strings, int n) 
         {
             Arrays.sort(strings,new mycomparator(n));
-            
             String[] answer = strings;
             return answer;
         }
