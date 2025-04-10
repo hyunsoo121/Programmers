@@ -8,7 +8,7 @@ public class P134240 {
             {
                 if(n%2!=0) //홀수 인 경우
                 {
-                    n--;
+                    n--; //
                 }
                 total+=n;
                 cnt++;
