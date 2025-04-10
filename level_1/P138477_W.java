@@ -1,5 +1,3 @@
-package Programmers.level_1;
-
 import java.util.*;
 public class P138477_W {
 class Solution {
