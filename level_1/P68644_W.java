@@ -14,7 +14,7 @@ class Solution {
             for(int j=i+1;j<cnt;j++)
             {
                 int v2=numbers[j];
-                int result=v1+v2;
+                int result=v1+v2; //
                 hs.add(result);
             }
         }
