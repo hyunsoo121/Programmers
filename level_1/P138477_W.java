@@ -10,7 +10,7 @@ class Solution {
             {
                 al.add(key);
                 Collections.sort(al);
-                today.add(al.get(0));
+                today.add(al.get(0)); //
             }
             else
             {
