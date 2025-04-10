@@ -1,5 +1,3 @@
-package Programmers.level_1;
-
 public class P134240 {
     class Solution {
         public String solution(int[] food) 
