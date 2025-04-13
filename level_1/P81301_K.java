@@ -1,4 +1,4 @@
-package Programmers.level_1;
+
 import java.util.*;
 
 public class P81301_K {
