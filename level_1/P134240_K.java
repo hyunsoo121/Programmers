@@ -1,4 +1,3 @@
-package Programmers.level_1;
 
 public class P134240_K {
     class Solution {
