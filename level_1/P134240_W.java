@@ -1,4 +1,4 @@
-public class P134240 {
+public class P134240_W {
     class Solution {
         public String solution(int[] food) 
         {
