@@ -4,10 +4,7 @@ class Solution {
     public int[] solution(int[] numbers) {
         int cnt=0;
         HashSet<Integer> hs=new HashSet<>(); //더한 값을 집어넣음
-        for(int n : numbers)
-        {
-            cnt++;
-        }
+        cnt=numbers.length;
         for(int i=0;i<cnt;i++)
         {
             int v1=numbers[i]; //
