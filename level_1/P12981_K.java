@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class P12981 {
+public class P12981_K {
     class Solution {
         public int[] solution(int n, String[] words) {
 
