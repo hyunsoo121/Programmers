@@ -1,46 +1,28 @@
 public class P42860_W {
-    class Solution {
-    public int solution(String name) {
-        int answer = 0;
-        char[] alpha=name.toCharArray();
-        int current=0; //현재 위치를 저장
-        boolean[] visited=new boolean[alpha.length];
-        for(int i=0;i<alpha.length;i++)
-        {
-            char cur_point=alpha[i];
-            if(cur_point=='A') //현재 값이 A인 경우
-            {
-                visited[i]=true;
-                continue;
-            }
-            else
-            {
+        class Solution {
+        public int solution(String name) {
+            int answer = 0;
+            int len = name.length();
+            int move = len - 1;
 
+            // 1. 알파벳 바꾸는 횟수 계산
+            for (int i = 0; i < len; i++) {
+                answer += Math.min(name.charAt(i) - 'A', 'Z' - name.charAt(i) + 1);
+
+                // 2. A 연속 구간 고려한 최소 이동 횟수 계산
+                int next = i + 1;
+                while (next < len && name.charAt(next) == 'A') {
+                    next++;
+                }
+
+                // 좌우로 돌아가는 최적 경로 계산
+                move = Math.min(move, i * 2 + len - next); // 오른쪽 갔다가 왼쪽
+                move = Math.min(move, (len - next) * 2 + i); // 왼쪽 갔다가 오른쪽
             }
+
+            answer += move;
+            return answer;
         }
-        return answer;
     }
-    public int min_cursor(int target,int current,int n) //최소한의 커서 움직임 => 문제있으니 수정해야됨(지나가는 길에 있는걸 처리하지 못함)
-    {
-        int front=target-current;
-        int back=n-front;
-        return Math.min(front,back);
-    }
-    public int min_change(char target) //현재 얼마나 바꿔야지 최소인지
-    {
-        int front=target-'A';
-        int back=26-front;
-        // int current=0;
-        // for(int i=0;i<25;i++)
-        // {
-        //     current-=1;
-        //     if(current<0)
-        //     {
-        //         current+=26;
-        //     }
-        //     if(current==front) back=i+1;
-        // }
-        return Math.min(front,back);
-    }
-}
+
 }
