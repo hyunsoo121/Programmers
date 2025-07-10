@@ -4,7 +4,6 @@ public class P12905_W
 {
     public int solution(int [][]board)
     {
-        int answer = 1234;
         int n=board.length;
         int m=board[0].length;
         int maxSize=0;
@@ -22,7 +21,7 @@ public class P12905_W
                 maxSize=Math.max(maxSize,board[i][j]);
             }
         }
-        return answer;
+        return maxSize;
     }
 }
 }
